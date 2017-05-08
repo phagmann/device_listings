@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- setting up jquery, bootstrap, and custom CSS/JS files -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/master.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="../assets/application.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<div class="margin-left">
+<body>
+
+  <div class="container-fluid">
+
+
+  <div class="shift-down"></div>
+
+  <!-- this row sets up button functionality on the screen, 
+  see the 'application.js' file for what the 'onclick' functions actually do -->
+  <div class="row" >
+        <button  id= "all" class="red-box" onclick="buttonColor(this);listDevices(this);" style="padding-top: 9px; padding-bottom: 11px; padding-right: 10px; margin-right: 20px"> <span id="askisk" class="asterisk-center"> * </span> All </button>
+
+        <button  id= "comps" class="grey-box" onclick="buttonColor(this);listDevices(this);"> <img src="../assets/laptop-icon.svg" height="30x" width="30px" />  Laptops </button>  
+  </div>
+
+    <div class="row" style="padding-top: 15px; padding-bottom: 15px">
+        <input id="search" type="text" value="" placeholder="Search All Devices" class="shadow">
+        <script type="text/javascript">
+            $("#search").keyup( function(){  
+                // TODO: use live updat of input to search for devices!
+                var searchable = $('#search').val().toString();
+                $('#search').keyup(function(e){
+                    if(e.keyCode == 8){
+                        searchable = $('#search').val().toString();
+                    }
+                });  
+                searchUpdate(searchable);
+            });
+
+        </script>
+    </div>
+  <!-- this row simply adds the svg image with a title -->
+    <div class="row">
+        <span id="typeDevice" style="margin-right: 540px;"> <img src="../assets/laptop-icon.svg" height="30px" width="30px"/> All </span>  
+        <span style="margin-right: 40px;"> Brand </span>  
+        <span style="margin-right: 40px;"> Screen Size </span>  
+        <span  style="margin-right: 40px;"> Processor </span>    
+    </div>
+
+<!-- this row generates the grey line -->
+    <div class="row">
+        <div class="grey-line col-md-11"></div>  
+    </div>
+
+<!-- this "row" lists all the specified devises -->
+  <div class="row" id="listing">
+        <div class="text-with-device col-md-3"> <img src="../assets/macbook-pro.png" class="mac" height=80 width=80 /> 
+        <div class="device-spacing">
+            <h4>MacBook Pro</h4>
+            <div class="circle"> <medium> ! </medium></div>
+            <div class="gold-box"> <regular> NEW </regular></div>
+            <div class="num-clicked"> <regular> 36 </regular> </div>
+            <p style="color: #999999;">From $111.31/month  </p>
+        </div>
+        </div>
+
+        <div class="text-with-device col-md-3"> <img src="../assets/dell-latitude-e7270.png" class="dell_lat" height=80 width=80 /> 
+        <div class="device-spacing">
+            <h4>Dell Latitude E7270</h4>
+            <div class="num-clicked"> <regular> 36 </regular> </div>
+            <p style="color: #999999;">From $64.10/month </p>
+        </div>
+        </div>
+
+        <div class="text-with-device col-md-3"> <img src="../assets/motorola-mota-z.png" class="mota" height=80 width=80 />
+        <div class="device-spacing">
+            <h4>Mototorola Mota Z</h4>
+            <div class="gold-box"> <regular> NEW </regular></div>
+            <div class="num-clicked"> <regular> 36 </regular> </div>
+            <p style="color: #999999;">From $0.01/month </p>
+        </div>
+        </div>
+
+        <div class="text-with-device col-md-3"> <img src="../assets/dell-precision-m5520.png" class="dell_pre" height=80 width=80 />
+        <div class="device-spacing">
+            <h4>Dell Precision M5520</h4>
+            <div class="num-clicked"> <regular> 36 </regular> </div>
+            <p style="color: #999999;">From $104.60/month </p>
+        </div>
+        </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</div>
+</html>

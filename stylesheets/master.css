@@ -1,0 +1,111 @@
+
+
+.shift-down {
+    padding-bottom: 80px;
+}
+/*these next two class types help align the correct device image to the left with the text to the right*/
+.text-with-device {
+    padding-top: 5px; 
+    float: left;
+    width: 100;
+    margin:15px;
+}
+
+.device-spacing {
+    float:right;
+    width: 50%;
+}
+
+
+
+/*ttf files are used to create different types of fonts, so we upload them in a css file to customize our two fonts*/
+
+@font-face {
+   font-family: med;
+   src: url(../assets/Roboto-Medium.ttf);
+}
+
+medium {
+   font-family: med;
+}
+
+@font-face {
+   font-family: reg;
+   src: url(../assets/Roboto-Regular.ttf);
+}
+
+regular {
+   font-family: reg;
+}
+
+.grey-line {
+    border-bottom: thin solid #d3d3d3;
+}
+
+.grey-box {
+   text-align: center;
+   border: thin solid #d3d3d3; 
+   padding: 5px;
+}
+
+.red-box{
+   text-align: center;
+   border: thin solid #990000; 
+   padding: 5px;
+
+}
+
+.circle {
+    text-align: center;
+    color: white;
+    background: #990000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px; 
+    display:inline-block;
+}
+
+.gold-box{ 
+    text-align: center;
+    background: gold; 
+    width: 40px;
+    height: 20px;
+    display:inline-block;
+}
+ /*im assuming the grey box in 'mockup.png' is number of times the device was clicked? */
+.num-clicked {
+    text-align: center;
+    background: #d3d3d3;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+}
+
+
+button{
+    background: white;
+}
+/*elimnates blue highlight when clicked*/
+button:focus {outline:0;}
+
+.margin-left {
+    margin-left: 20%;
+
+}
+
+.asterisk-center{
+  line-height: 10px; 
+  vertical-align: bottom;
+  margin: 5px; 
+  font-size:30px; 
+  color: #990000;
+}
+/*used for making the search box more pronounced to the user*/
+.shadow {
+  box-shadow:         0px 0px 0px 0px #ccc;
+}
+
+
+
+
+
