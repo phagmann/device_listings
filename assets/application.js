@@ -6,7 +6,7 @@ function buttonColor(curr_div) {
     if (curr_div.id == "all"){
         curr_div.className = "red-box";
         document.getElementById("comps").className= "grey-box";
-        document.getElementById("typeDevice").innerHTML= "<img src='../assets/laptop-icon.svg' height='30px' width='30px'/> All";
+        document.getElementById("typeDevice").innerHTML= "<img src='assets/laptop-icon.svg' height='30px' width='30px'/> All";
         document.getElementById('search').placeholder= "Search All Devices";
         document.getElementById('askisk').style.color = "#990000";
         
@@ -16,7 +16,7 @@ function buttonColor(curr_div) {
     else if(curr_div.id == "comps"){
         curr_div.className = "red-box";
         document.getElementById("all").className = "grey-box";
-        document.getElementById("typeDevice").innerHTML= "<img src='../assets/laptop-icon.svg' height='30px' width='30px'/> Laptops";
+        document.getElementById("typeDevice").innerHTML= "<img src='assets/laptop-icon.svg' height='30px' width='30px'/> Laptops";
         document.getElementById('search').placeholder= "Search Laptops";
         document.getElementById('askisk').style.color = "black";
     };
@@ -99,7 +99,7 @@ var mac = {
         newy: true,
         number: "36",
         cost: "111.31",
-        img: "../assets/macbook-pro.png"
+        img: "assets/macbook-pro.png"
 
     };
 var dellLat = {
@@ -110,7 +110,7 @@ var dellLat = {
         newy: false,
         number: "36",
         cost: "64.10",
-        img: "../assets/dell-latitude-e7270.png"
+        img: "assets/dell-latitude-e7270.png"
 
     };
 var dellPre = {
@@ -121,7 +121,7 @@ var dellPre = {
         newy: false,
         number: "36",
         cost: "104.60",
-        img: "../assets/dell-precision-m5520.png"
+        img: "assets/dell-precision-m5520.png"
 
     };
 var mota = {
@@ -132,6 +132,6 @@ var mota = {
         newy: true,
         number: "36",
         cost: "0.01",
-        img: "../assets/motorola-mota-z.png"
+        img: "assets/motorola-mota-z.png"
 
     };
