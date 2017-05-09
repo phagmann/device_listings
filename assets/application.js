@@ -20,7 +20,7 @@ function buttonColor(curr_div) {
         document.getElementById('search').placeholder= "Search Laptops";
         document.getElementById('askisk').style.color = "black";
     };
-    $('#search').val("")
+    $('#search').val("");
 }
 
 // helper function of 'listDevices' which sorts out the correct html to display on the page
@@ -65,7 +65,6 @@ for (deviceIndex in listDevice){
 // jQuery was used in 'index.html' to gather that information
 
 function searchUpdate(search){
-    console.log(search);
     var all_div = document.getElementById("all");
     var comps_div = document.getElementById("comps");
     var main_div = document.getElementById("listing");
