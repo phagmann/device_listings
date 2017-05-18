@@ -4,6 +4,10 @@
     padding-bottom: 80px;
 }
 /*these next two class types help align the correct device image to the left with the text to the right*/
+
+#listing{
+  position: absolute;
+}
 .text-with-device {
     padding-top: 5px; 
     float: left;
@@ -14,8 +18,24 @@
 .device-spacing {
     float:right;
     width: 50%;
+
 }
 
+table, td {
+    border: 1px solid white;
+}
+
+.rightBlock {
+    float: right;
+    position: relative;
+}
+
+.shapeAllBox{
+  padding-top: 9px; 
+  padding-bottom: 11px; 
+  padding-right: 10px; 
+  margin-right: 20px;
+}
 
 
 /*ttf files are used to create different types of fonts, so we upload them in a css file to customize our two fonts*/
@@ -45,13 +65,13 @@ regular {
 .grey-box {
    text-align: center;
    border: thin solid #d3d3d3; 
-   padding: 5px;
+   /*padding: 5px;*/
 }
 
 .red-box{
    text-align: center;
    border: thin solid #990000; 
-   padding: 5px;
+   /*padding: 5px;*/
 
 }
 
@@ -84,7 +104,9 @@ regular {
 
 button{
     background: white;
+    padding: 5px;
 }
+
 /*elimnates blue highlight when clicked*/
 button:focus {outline:0;}
 
@@ -104,6 +126,11 @@ button:focus {outline:0;}
 .shadow {
   box-shadow:         0px 0px 0px 0px #ccc;
 }
+
+/*       ///////*/
+
+
+
 
 
 
